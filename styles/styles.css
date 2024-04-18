@@ -177,7 +177,7 @@ footer{
     margin-right:20px;
 }
 ul{
-    margin-left:80px;
+    justify-content: center;
 }
 li{
     width:60px;
@@ -193,7 +193,8 @@ li, .small-button{
     margin-top: 24px;
     margin-bottom: 12px;
 }
-.clear-button{
+#clear-button{
+    margin: auto;
     margin-bottom: 20px;
     width: 200px;
 }
@@ -210,7 +211,7 @@ li, .small-button{
     - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
-
+/* 
 .contact-page .main{
     height: 420px;
     text-align: center;
@@ -221,5 +222,8 @@ li, .small-button{
     column-gap: 24px;
     justify-content: center;
 }
+textarea{
+    height:150px;
+} */
 
 
