@@ -63,24 +63,55 @@ function dayClicked(day) {
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
+let clearButton = document.getElementById("clear-button");
+clearButton.addEventListener("click", clearDays);
 
-
-
-
+function clearDays(){
+    monday.classList.remove("clicked");
+    tuesday.classList.remove("clicked");
+    wednesday.classList.remove("clicked");
+    thursday.classList.remove("clicked");
+    friday.classList.remove("clicked");
+    saturday.classList.remove("clicked");
+    sunday.classList.remove("clicked");
+}
 
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
 
-
+fullDay.addEventListener("click", function() {
+    rateClicked(fullDay);
+});
 
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
 
+// halfDay.addEventListener("click", function() {
+//     rateClicked(halfDay);
+// });
 
+// function dayClicked(day) {
 
+//     if (day === fullDay)
+//     {
+//         day.classList.add("clicked");
+//         halfDay.classList.remove("clicked");
+//         costperDay = 20;
+//     }
+//     else if (day === halfDay)
+//     {day.classList.add("clicked");
+//         fullDay.classList.remove("clicked");
+//         costperDay = 35;
+//     }
+//     calculate();
+//   }
 
 
 /********* calculate *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 
+// function calculate(){
+//     totalCost = numberDays * costperDay;
+//     costDisplay.innerHTML = totalCost;
+// }
 
