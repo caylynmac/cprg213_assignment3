@@ -3,7 +3,7 @@
 // Do any of these variables need to be initialized when the page is loaded? 
 // When do they need to be reset or updated?
 
-let costperDay = 20;
+let costperDay = 35;
 let numberDays = 0;
 let totalCost = 0;
 let monday = document.getElementById("monday");
@@ -85,28 +85,28 @@ function fullClicked() {
         full.classList.add("clicked");
         costperDay = 35;
     }
-    calculate();
+    calculate(numberDays, costperDay);
   }
-  full.addEventListener("click", dayClicked);
+  full.addEventListener("click", fullClicked);
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
 
-// half.addEventListener("click", halfClicked);
+half.addEventListener("click", halfClicked);
 
-// function halfClicked() {
+function halfClicked() {
 
-//     if (halfDay.classList.contains("clicked"))
-//     {
-//         halfDay.classList.remove("clicked");
-//         fullDay.classList.add("clicked");
-//         costperDay = 20;
-//     }
-//     else if (!halfDay.classList.contains("clicked"))
-//     {halfDay.classList.add("clicked");
-//         fullDay.classList.remove("clicked");
-//         costperDay = 35;
-//     }
-//     calculate(numberDays, costperDay);
-//   }
+    if (half.classList.contains("clicked"))
+    {
+        half.classList.remove("clicked");
+        full.classList.add("clicked");
+        costperDay = 35;
+    }
+    else if (!(half.classList.contains("clicked")))
+    {half.classList.add("clicked");
+        full.classList.remove("clicked");
+        costperDay = 20;
+    }
+    calculate(numberDays, costperDay);
+  }
 
 
 /********* calculate *********/
