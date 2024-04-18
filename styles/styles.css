@@ -134,6 +134,7 @@ footer{
 
 .index{
     flex-direction: row;
+    
 }
 .index img{
     width:300px;
@@ -148,7 +149,8 @@ footer{
 }
 .index .fake-button{
     width: 250px;
-    column-gap: 150px;
+    
+    margin-left: 150px;
 }
 
 
@@ -211,7 +213,7 @@ li, .small-button{
     - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
-/* 
+
 .contact-page .main{
     height: 420px;
     text-align: center;
@@ -224,6 +226,6 @@ li, .small-button{
 }
 textarea{
     height:150px;
-} */
+}
 
 
